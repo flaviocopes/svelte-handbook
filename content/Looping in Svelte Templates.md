@@ -6,7 +6,7 @@ let goodDogs = ['Roger', 'Syd']
 </script>
 
 {#each goodDogs as goodDog}
-	<li>{goodDog}</li>
+  <li>{goodDog}</li>
 {/each}
 ```
 
@@ -20,7 +20,7 @@ let goodDogs = ['Roger', 'Syd']
 </script>
 
 {#each goodDogs as goodDog, index}
-	<li>{index}: {goodDog}</li>
+  <li>{index}: {goodDog}</li>
 {/each}
 ```
 
@@ -36,12 +36,12 @@ let goodDogs = ['Roger', 'Syd']
 </script>
 
 {#each goodDogs as goodDog (goodDog)}
-	<li>{goodDog}</li>
+  <li>{goodDog}</li>
 {/each}
 
 <!-- with the index -->
 {#each goodDogs as goodDog, index (goodDog)}
-	<li>{goodDog}</li>
+  <li>{goodDog}</li>
 {/each}
 ```
 
@@ -56,11 +56,11 @@ let goodDogs = [
 </script>
 
 {#each goodDogs as goodDog (goodDog.id)}
-	<li>{goodDog.name}</li>
+  <li>{goodDog.name}</li>
 {/each}
 
 <!-- with the index -->
 {#each goodDogs as goodDog, index (goodDog.id)}
-	<li>{goodDog.name}</li>
+  <li>{goodDog.name}</li>
 {/each}
 ```

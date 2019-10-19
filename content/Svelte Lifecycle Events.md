@@ -13,7 +13,7 @@ We don't have access to any of those methods by default, but we need to import t
 
 ```html
 <script>
-	import { onMount, onDestroy, beforeUpdate, afterUpdate } from 'svelte'
+  import { onMount, onDestroy, beforeUpdate, afterUpdate } from 'svelte'
 </script>
 ```
 

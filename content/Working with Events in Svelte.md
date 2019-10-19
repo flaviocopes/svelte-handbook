@@ -56,8 +56,8 @@ To do so, we must import the `createEventDispatcher` function from the `svelte` 
 
 ```html
 <script>
-	import { createEventDispatcher } from 'svelte'
-	const dispatch = createEventDispatcher()
+  import { createEventDispatcher } from 'svelte'
+  const dispatch = createEventDispatcher()
 </script>
 ```
 

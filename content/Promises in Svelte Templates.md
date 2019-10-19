@@ -12,16 +12,16 @@ Once the promise resolves, the result is passed to the `{:then}` block:
 
 ```html
 <script>
-	const fetchImage = (async () => {
-		const response = await fetch('https://dog.ceo/api/breeds/image/random')
+  const fetchImage = (async () => {
+    const response = await fetch('https://dog.ceo/api/breeds/image/random')
     return await response.json()
-	})()
+  })()
 </script>
 
 {#await fetchImage}
-	<p>...waiting</p>
+  <p>...waiting</p>
 {:then data}
-	<img src={data.message} alt="Dog image" />
+  <img src={data.message} alt="Dog image" />
 {/await}
 ```
 
@@ -29,11 +29,11 @@ You can detect a promise rejection by adding a `{:catch}` block:
 
 ```html
 {#await fetchImage}
-	<p>...waiting</p>
+  <p>...waiting</p>
 {:then data}
-	<img src={data.message} alt="Dog image" />
+  <img src={data.message} alt="Dog image" />
 {:catch error}
-	<p>An error occurred!</p>
+  <p>An error occurred!</p>
 {/await}
 ```
 

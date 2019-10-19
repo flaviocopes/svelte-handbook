@@ -10,7 +10,7 @@ The first is **if**:
 
 ```html
 {#if isRed}
-	<p>Red</p>
+  <p>Red</p>
 {/if}
 ```
 
@@ -34,9 +34,9 @@ To do something else if that's not satisfied, we use the appropriately called `e
 
 ```html
 {#if isRed}
-	<p>Red</p>
+  <p>Red</p>
 {:else}
-	<p>Not red</p>
+  <p>Not red</p>
 {/if}
 ```
 
@@ -46,9 +46,9 @@ You can use any JavaScript expression into the `if` block condition, so you can 
 
 ```html
 {#if !isRed}
-	<p>Not red</p>
+  <p>Not red</p>
 {:else}
-	<p>Red</p>
+  <p>Red</p>
 {/if}
 ```
 

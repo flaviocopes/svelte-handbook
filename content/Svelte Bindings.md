@@ -51,22 +51,22 @@ let dogs = ['Roger', 'Syd']
 </script>
 
 <h2>
-	Who's a good dog?
+  Who's a good dog?
 </h2>
 
 <ul>
   {#each dogs as dog}
-	  <li>{dog} <input type=checkbox bind:group={goodDogs} value={dog}></li>
+    <li>{dog} <input type=checkbox bind:group={goodDogs} value={dog}></li>
   {/each}
 </ul>
 
 <h2>
-	Good dogs according to me:
+  Good dogs according to me:
 </h2>
 
 <ul>
   {#each goodDogs as dog}
-	  <li>{dog}</li>
+    <li>{dog}</li>
   {/each}
 </ul>
 ```
@@ -100,21 +100,21 @@ The cool thing is that if you generate options dynamically from an array of obje
 let selected
 
 const goodDogs = [
-	{ name: 'Roger' },
-	{ name: 'Syd' }
+  { name: 'Roger' },
+  { name: 'Syd' }
 ]
 </script>
 
 <h2>List of possible good dogs:</h2>
 <select bind:value={selected}>
-	{#each goodDogs as goodDog}
+  {#each goodDogs as goodDog}
     <option value={goodDog}>{goodDog.name}</option>
-	{/each}
+  {/each}
 </select>
 
 {#if selected}
 <h2>
-	Good dog selected: {selected.name}
+  Good dog selected: {selected.name}
 </h2>
 {/if}
 ```
@@ -128,24 +128,24 @@ See example: [https://svelte.dev/repl/7e06f9b7becd4c57880db5ed184ea0f3](https://
 let selected = []
 
 const goodDogs = [
-	{ name: 'Roger' },
-	{ name: 'Syd' }
+  { name: 'Roger' },
+  { name: 'Syd' }
 ]
 </script>
 
 <h2>List of possible good dogs:</h2>
 <select multiple bind:value={selected}>
-	{#each goodDogs as goodDog}
+  {#each goodDogs as goodDog}
     <option value={goodDog}>{goodDog.name}</option>
-	{/each}
+  {/each}
 </select>
 
 {#if selected.length}
 <h2>Good dog selected:</h2>
 <ul>
-	{#each selected as dog}
-	  <li>{dog.name}</li>
-	{/each}
+  {#each selected as dog}
+    <li>{dog.name}</li>
+  {/each}
 </ul>
 {/if}
 ```
@@ -202,9 +202,9 @@ You can import the component and bind the `inMovement` prop:
 
 ```html
 <script>
-	import Car from './Car.svelte';
+  import Car from './Car.svelte';
 
-	let carInMovement;
+  let carInMovement;
 </script>
 
 <Car bind:inMovement={carInMovement} />

@@ -26,7 +26,7 @@ Say you have a `count` variable. You can increment that using, simply, `count = 
 let count = 0
 
 const incrementCount = () => {
-	count++
+  count++
 }
 </script>
 

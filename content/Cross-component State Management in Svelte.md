@@ -115,7 +115,7 @@ Another option, best suited if you need to execute some logic when the variable 
 
 ```js
 username.subscribe(newValue => {
-	console.log(newValue)
+  console.log(newValue)
 })
 ```
 
@@ -155,7 +155,7 @@ You can setup an interval in this function, too:
 import { readable, get } from 'svelte/store'
 export const count = readable(0, set => {
   setInterval(() => {
-	  set(get(count) + 1)
+    set(get(count) + 1)
   }, 1000)
 })
 ```
