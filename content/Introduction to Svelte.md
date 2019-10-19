@@ -24,7 +24,7 @@ Node installs the [`npx`](https://flaviocopes.com/npx/) command, which is a hand
 npx degit sveltejs/template firstapp
 ```
 
-This will download and run the [degit command](https://github.com/Rich-Harris/degit), which in turn downloads the latest code of the Svelte project template living at [https://github.com/sveltejs/template](https://github.com/sveltejs/template), into the `firstapp` folder.
+This will download and run the [degit command](https://github.com/Rich-Harris/degit), which in turn downloads the latest code of the Svelte project template living at [https://github.com/sveltejs/template](https://github.com/sveltejs/template), into a newly created `firstapp` folder. Make sure that [git is installed](https://git-scm.com/download) on your machine and added to the PATH variable, otherwise the degit command won't work. In case, things are still not working out for you, you can alternatively 'Clone or download' the template project and afterwards delete the hidden `.git` folder, which is basically the same what the `degit` command does (only difference is that the folder is called `template` instead of `firstapp`).
 
 Now go into that `firstapp` folder and run `npm install` to download the additional dependencies of the template. At the time of writing, those are the dependencies of that project template:
 
