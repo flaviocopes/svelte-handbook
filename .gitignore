@@ -1,0 +1,11 @@
+_book
+book.json
+book.pdf
+_layouts
+.DS_Store
+.gitattributes
+chapters
+styles
+SUMMARY.md
+cover_small.jpg
+.vscode
