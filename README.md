@@ -14,6 +14,10 @@ You can reach me via email at [flavio@flaviocopes.com](mailto:flavio@flaviocopes
 
 My website is [flaviocopes.com](https://flaviocopes.com).
 
+## Draft PDF
+
+[Download the Draft PDF](https://www.dropbox.com/s/ejea6scayntdroq/Svelte%20Handbook.pdf?dl=0)
+
 ## Summary
 
 - [Introduction to Svelte](content/Introduction%20to%20Svelte.md)
