@@ -49,15 +49,15 @@ npm run dev
 
 This will start the app on localhost, on port 5000, by default:
 
-![CLI](Introduction to Svelte/cli.png)
+![CLI](Introduction%20to%20Svelte/cli.png)
 
 If you point your browser there, you'll see the "Hello world!" example:
 
-![Browser](Introduction to Svelte/browser.png)
+![Browser](Introduction%20to%20Svelte/browser.png)
 
 You're now ready to open the code in your favorite editor. The `src` folder contains all you need to tweak the app: the `main.js` file:
 
-![Editor](Introduction to Svelte/editor.png)
+![Editor](Introduction%20to%20Svelte/editor.png)
 
 This file is the entry point and in this case initializes the App component, which is defined in `App.svelte`, a single file component:
 
