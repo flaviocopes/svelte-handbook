@@ -8,4 +8,4 @@ I can now point you to two places to learn more:
 
 That's it!
 
-I can point you to my website <flaviocopes.com> if you are interested in learning more, I publish one new tutorial every day and I'll be posting more Svelte guides soon!
+I can point you to my website [flaviocopes.com](https://flaviocopes.com) if you are interested in learning more, I publish one new tutorial every day and I'll be posting more Svelte guides soon!
