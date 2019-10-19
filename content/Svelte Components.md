@@ -72,7 +72,7 @@ Here's an example. Say you have a Button component in `Button.svelte`:
 
 and you want to provide other components the ability to change the color of the button.
 
-> A better solution for this use caseis to use props, which is something we'll talk about in the next chapter. But stick with me for this example
+> A better solution for this use case is to use props, which is something we'll talk about in the next chapter. But stick with me for this example
 
 You can provide a function, called `changeColor`.
 
