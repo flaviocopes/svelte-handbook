@@ -48,9 +48,9 @@ You apply a modifier like this: `<button on:click|stopPropagation|preventDefault
 
 There are other modifiers, which are more niche. `capture` enables [capturing events instead of bubbling](https://flaviocopes.com/javascript-events/#event-bubbling-and-event-capturing), `once` only fires the event once, `self` only fires the event if the target of the event is this object (removing it from the bubbling/capturing hierarchy).
 
-## Creating your own events in components
+## Creating your events in components
 
-What's interesting is that we can create custom events in components, and use the same exact syntax of built-in DOM events.
+What's interesting is that we can create custom events in components, and use the same syntax of built-in DOM events.
 
 To do so, we must import the `createEventDispatcher` function from the `svelte` package and call it to get an event dispatcher:
 
