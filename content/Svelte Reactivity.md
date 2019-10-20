@@ -1,4 +1,4 @@
-In Svelte you can listen for changes on the component state, and update other variables.
+In Svelte you can listen for changes in the component state, and update other variables.
 
 For example if you have a `count` variable:
 
