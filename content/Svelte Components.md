@@ -1,10 +1,10 @@
 Modern Web development is very much focused on components, and Svelte is no different.
 
-What is a component? A component is an atomic part of the application, that is self contained and optionally references other components to compose its output.
+What is a component? A component is an atomic part of the application, that is self-contained and optionally references other components to compose its output.
 
-In other words, it's a compartimentalized part of the application. A form can be a component. An input element can be a component. The whole application is a component.
+In other words, it's a compartmentalized part of the application. A form can be a component. An input element can be a component. The whole application is a component.
 
-Svelte components contain all what's needed to render a piece of the UI. Every Svelte component is declared into a `.svelte` file, and in there you'll find the content (markup), the behavior (JavaScript) and the presentation (CSS), without having to define separate files.
+Svelte components contain all that's needed to render a piece of the UI. Every Svelte component is declared into a `.svelte` file, and in there you'll find the content (markup), the behavior (JavaScript) and the presentation (CSS), without having to define separate files.
 
 Which is a sane way to define a piece of the UI, because you don't need to search for the items that affect the same element across various files.
 
@@ -36,7 +36,7 @@ For example a few weeks ago I included a date picker component built with Svelte
 
 A component can, as said, be used by other components.
 
-Other components can now import the `Dog` component in their own code.
+Other components can now import the `Dog` component in their code.
 
 For example here's a `House` component, defined in a `House.svelte` file, in the same folder of `Dog.svelte`:
 
