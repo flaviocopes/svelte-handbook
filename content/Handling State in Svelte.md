@@ -41,7 +41,7 @@ Having used both, I find Svelte to be a much more JavaScript-like syntax.
 
 We need to be aware of one thing, which is learned pretty quickly: we must also do an assignment when changing the value.
 
-Svelte always wants an assignment, otherwise it might not recognize that the state changed.
+Svelte always want an assignment, otherwise it might not recognize that the state changed.
 
 For simple values like strings and numbers, that's mostly a given, because all methods on String return new strings, and same for numbers - they are immutable.
 
