@@ -1,6 +1,6 @@
 In a Svelte component, when it comes to rendering HTML you can work with some specific syntax to craft the UI you need at every stage of the application lifecycle.
 
-In particular we'll now explore conditional structures.
+In particular, we'll now explore conditional structures.
 
 The problem is this: you want to be able to look at a value/expression, and if that points to a true value do something, if that points to a false value then do something else.
 
@@ -40,7 +40,7 @@ To do something else if that's not satisfied, we use the appropriately called `e
 {/if}
 ```
 
-Either the first block is rendered in the template, or the second one. There's no other option.
+Either the first block is rendered in the template or the second one. There's no other option.
 
 You can use any JavaScript expression into the `if` block condition, so you can negate an option using the `!` operator:
 

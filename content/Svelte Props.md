@@ -14,7 +14,7 @@ Once you do so, you can use the newly imported component in the markup, like an 
 <SignupForm />
 ```
 
-In this way you are forming a parent/child relationship between the two components: the one that imports, and the one that is imported.
+In this way, you are forming a parent/child relationship between the two components: the one that imports, and the one that is imported.
 
 Often you want to have the parent component pass data to the child component.
 

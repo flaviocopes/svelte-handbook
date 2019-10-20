@@ -6,7 +6,7 @@ They are especially useful with forms.
 
 ## bind:value
 
-Let's start with most common form of binding you'll often use, which you can apply using `bind:value`. You take a variable from the component state, and you bind it to a form field:
+Let's start with the most common form of binding you'll often use, which you can apply using `bind:value`. You take a variable from the component state, and you bind it to a form field:
 
 ```html
 <script>
@@ -212,4 +212,4 @@ You can import the component and bind the `inMovement` prop:
 {carInMovement}
 ```
 
-This can allow interesting scenarios.
+This can allow for interesting scenarios.

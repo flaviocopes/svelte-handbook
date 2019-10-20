@@ -2,9 +2,9 @@
 
 In Svelte you can define a listener for a DOM event directly in the template, using the `on:<event>` syntax.
 
-For example to listen on the `click` event, you will pass a function to the `on:click` attribute.
+For example, to listen to the `click` event, you will pass a function to the `on:click` attribute.
 
-To listen on the `onmousemove` event, you'll pass a function to the `on:mousemove` attribute.
+To listen to the `onmousemove` event, you'll pass a function to the `on:mousemove` attribute.
 
 Here's an example with the handling function defined inline:
 
