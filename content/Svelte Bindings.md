@@ -40,7 +40,7 @@ let isChecked
 <input type=checkbox bind:checked={isChecked}>
 ```
 
- `bind:group` is really handy with checkboxes and radio inputs, because those are very often used in groups. Using `bind:group` you can associate a JavaScript array to a list of checkboxes, and have it populated based on the choices made by the user.
+ `bind:group` is handy with checkboxes and radio inputs, because those are very often used in groups. Using `bind:group` you can associate a JavaScript array to a list of checkboxes, and have it populated based on the choices made by the user.
 
 Here's an example. The `goodDogs` array populates based on the checkboxes I tick:
 
@@ -154,7 +154,7 @@ See example:  [https://svelte.dev/repl/b003248e87f04919a2f9fed63dbdab8c](https:/
 
 ## Other bindings
 
-Depending on the HTML tag you are working on, you can apply different kind of bindings.
+Depending on the HTML tag you are working on, you can apply different kinds of bindings.
 
 `bind:files` is a binding valid on `type="file"` input elements, to bind the list of selected files.
 
@@ -166,7 +166,7 @@ The `audio` and `video` media HTML tags allow to bind several of their propertie
 
 All things very useful for those specific HTML elements.
 
-## Read only bindings
+## Read-only bindings
 
 `offsetWidth`, `offsetHeight`, `clientWidth`, `clientHeight` can be bound, read only, on any block level HTML element, excluding void tags (like `br`) and elements that are set to be inline (`display: inline`).
 
@@ -182,7 +182,7 @@ let myInputField
 <input bind:this={myInputField} />
 ```
 
-This is really handy when you need to apply logic to elements after you mount them, for example, using the `onMount()` lifecycle event callback.
+This is handy when you need to apply logic to elements after you mount them, for example, using the `onMount()` lifecycle event callback.
 
 ## Binding components props
 
