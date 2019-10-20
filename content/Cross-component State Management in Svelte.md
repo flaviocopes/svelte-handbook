@@ -103,7 +103,7 @@ To get the value of the store variable _once_, you can use the `get()` function 
 
 ```js
 import { readable, get } from 'svelte/store'
-export const username = writable('Guest')
+export const username = readable('Guest')
 get(username) //'Guest'
 ```
 
