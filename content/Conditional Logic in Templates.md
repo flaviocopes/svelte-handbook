@@ -2,7 +2,7 @@ In a Svelte component, when it comes to rendering HTML you can work with some sp
 
 In particular, we'll now explore conditional structures.
 
-The problem is this: you want to be able to look at a value/expression, and if that points to a true value do something, if that points to a false value then do something else.
+The problem is this: you want to be able to look at a value/expression, and if that points to a true value do something if that points to a false value then do something else.
 
 Svelte provides us a very powerful set of control structures.
 
