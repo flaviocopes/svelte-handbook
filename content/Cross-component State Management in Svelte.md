@@ -102,7 +102,7 @@ username.update(existing => {
 To get the value of the store variable _once_, you can use the `get()` function exported by `svelte/store`:
 
 ```js
-import { readable, get } from 'svelte/store'
+import { writable, get } from 'svelte/store'
 export const username = writable('Guest')
 get(username) //'Guest'
 ```
