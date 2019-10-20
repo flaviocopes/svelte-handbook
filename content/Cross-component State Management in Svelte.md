@@ -14,7 +14,7 @@ This is done using **props**, and it's a technique that I think is the best as i
 
 ## The context API
 
-However, there are cases where props are not practical. Perhaps 2 components are so distant in the components tree that we'd have to move state up to the top level component.
+However, there are cases where props are not practical. Perhaps 2 components are so distant in the components tree that we'd have to move state up to the top-level component.
 
 In this case, another technique can be used and it's called **context API**, and it's ideal when you want to let multiple components communicate with descendants, but you don't want to pass props around.
 
@@ -42,7 +42,7 @@ const someObject = getContext('someKey')
 </script>
 ```
 
-You can only use `getContext` to retrieve a key either in the component that used `setContext`, or in one if its descendants.
+You can only use `getContext` to retrieve a key either in the component that used `setContext` or in one of its descendants.
 
 If you want to let two components living in 2 different component trees communicate, there's another tool for us: **stores**.
 
@@ -62,7 +62,7 @@ and create a store variable using the `writable()` function, passing the default
 const username = writable('Guest')
 ```
 
-This can be put into a separate file, which you can import into multiple components, for example called `store.js` (it's not a component, so it can be in a `.js` file instead of `.svelte`:
+This can be put into a separate file, which you can import into multiple components, for example, called `store.js` (it's not a component, so it can be in a `.js` file instead of `.svelte`:
 
 ```js
 import { writable } from 'svelte/store'
@@ -107,9 +107,9 @@ export const username = writable('Guest')
 get(username) //'Guest'
 ```
 
-To create a reactive variable instead, that's updated whenever it changes, you can prepend the store variable using `$`, in this example `$username`. Using that will make the component rerender whenever the stored value changes.
+To create a reactive variable instead, that's updated whenever it changes, you can prepend the store variable using `$`, in this example `$username`. Using that will make the component re-render whenever the stored value changes.
 
-> Svelte considers `$` to be a reserved value and will prevent you to use it for things that are not related to stores values (and which might lead to confusion), so if you are used to prepend DOM references using `$`, don't do it in Svelte.
+> Svelte considers `$` to be a reserved value and will prevent you to use it for things that are not related to stores values (and which might lead to confusion), so if you are used to prepending DOM references using `$`, don't do it in Svelte.
 >
 Another option, best suited if you need to execute some logic when the variable changes, is to use the `subscribe()` method of `username`:
 
