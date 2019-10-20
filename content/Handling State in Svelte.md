@@ -13,7 +13,7 @@ State is hosted in the `script` part of a component:
 let count = 0
 </script>
 
-Now, if you come from other frameworks in the frontend space like Vue or React, you might now think "how do I update this value?" - and for a good reason, as those frameworks make this operation rather unintuitive, I'd say.
+Now, if you come from other frameworks in the frontend space like Vue or React, you might think "how do I update this value?" - and for a good reason, as those frameworks make this operation rather unintuitive, I'd say.
 
 One great thing about Svelte is that you don't need to do anything special to update the state of a component.
 

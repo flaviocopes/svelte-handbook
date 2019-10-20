@@ -14,7 +14,7 @@ This is done using **props**, and it's a technique that I think is the best as i
 
 ## The context API
 
-However there are cases where props are not practical. Perhaps 2 components are so distant in the components tree that we'd have to move state up to the top level component.
+However, there are cases where props are not practical. Perhaps 2 components are so distant in the components tree that we'd have to move state up to the top level component.
 
 In this case, another technique can be used and it's called **context API**, and it's ideal when you want to let multiple components communicate with descendants, but you don't want to pass props around.
 
@@ -125,7 +125,7 @@ In addition to writable stores, Svelte provides 2 special kinds of stores: **rea
 
 Readable stores are special because they can't be updated from the outside - there's no `set()` or `update()` method. Instead, once you set the initial state, they can't be modified from the outside.
 
-The official Svelte docs show an interesting example using a timer to update a date. I can think of setting up a timer to fetch resource from the network, perform an API call, get data from the filesystem (using a local Node.js server) or anything else that can be set up autonomously.
+The official Svelte docs show an interesting example using a timer to update a date. I can think of setting up a timer to fetch a resource from the network, perform an API call, get data from the filesystem (using a local Node.js server) or anything else that can be set up autonomously.
 
 In this case instead of using `writable()` to initialize the store variable, we use `readable()`:
 

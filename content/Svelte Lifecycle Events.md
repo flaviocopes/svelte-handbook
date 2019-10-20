@@ -1,6 +1,6 @@
 Every component in Svelte fires a number of lifecycle events that we can hook on, to help us implement the functionality we have in mind.
 
-In particular we have
+In particular, we have
 
 - `onMount` fired after the component is rendered
 - `onDestroy` fired after the component is destroyed
