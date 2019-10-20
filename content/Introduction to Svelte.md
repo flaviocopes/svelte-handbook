@@ -2,7 +2,7 @@ Svelte is an exciting Web framework that offers a fresh new take on how to build
 
 If you are already experienced in React, Vue, Angular or other frontend frameworks, you might be pleasantly surprised by Svelte.
 
-My first impression with Svelte was that it all feels so much more plain JavaScript than working with other frameworks. Sure, you have some rules, and there are templates which are not 100% JavaScript, they look more like HTML, but most of the things that are complicated with other frameworks are very simple and lightweight with Svelte.
+My first impression with Svelte was that it all feels so much more plain JavaScript than working with other frameworks. Sure, you have some rules, and there are templates that are not 100% JavaScript, they look more like HTML, but most of the things that are complicated with other frameworks are very simple and lightweight with Svelte.
 
 And my first impression has been confirmed by further usage of the framework and its ecosystem of tools.
 
@@ -18,13 +18,13 @@ To use Svelte, you need to have Node.js installed because all the tooling we're 
 
 And make sure it's the latest version ([how to update Node.js](https://flaviocopes.com/how-to-update-node/)).
 
-Node installs the [`npx`](https://flaviocopes.com/npx/) command, which is a handy way to run Node commands. In particular we're going to run this:
+Node installs the [`npx`](https://flaviocopes.com/npx/) command, which is a handy way to run Node commands. In particular, we're going to run this:
 
 ```sh
 npx degit sveltejs/template firstapp
 ```
 
-This will download and run the [degit command](https://github.com/Rich-Harris/degit), which in turn downloads the latest code of the Svelte project template living at [https://github.com/sveltejs/template](https://github.com/sveltejs/template), into a newly created `firstapp` folder. Make sure that [git is installed](https://git-scm.com/download) on your machine and added to the PATH variable, otherwise the degit command won't work. In case, things are still not working out for you, you can alternatively 'Clone or download' the template project and afterwards delete the hidden `.git` folder, which is basically the same what the `degit` command does (only difference is that the folder is called `template` instead of `firstapp`).
+This will download and run the [degit command](https://github.com/Rich-Harris/degit), which in turn downloads the latest code of the Svelte project template living at [https://github.com/sveltejs/template](https://github.com/sveltejs/template), into a newly created `firstapp` folder. Make sure that [git is installed](https://git-scm.com/download) on your machine and added to the PATH variable, otherwise the degit command won't work. In case, things are still not working out for you, you can alternatively 'Clone or download' the template project and then delete the hidden `.git` folder, which is basically the same what the `degit` command does (only difference is that the folder is called `template` instead of `firstapp`).
 
 Now go into that `firstapp` folder and run `npm install` to download the additional dependencies of the template. At the time of writing, those are the dependencies of that project template:
 
