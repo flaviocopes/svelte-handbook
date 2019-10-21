@@ -1,12 +1,12 @@
 Modern Web development is very much focused on components, and Svelte is no different.
 
-What is a component? A component is an atomic part of the application, that is self-contained and optionally references other components to compose its output.
+What is a component? A component is an atomic part of the application that is self-contained and optionally references other components to compose its output.
 
 In other words, it's a compartmentalized part of the application. A form can be a component. An input element can be a component. The whole application is a component.
 
-Svelte components contain all that's needed to render a piece of the UI. Every Svelte component is declared into a `.svelte` file, and in there you'll find the content (markup), the behavior (JavaScript) and the presentation (CSS), without having to define separate files.
+Svelte components contain all that's needed to render a piece of the UI. Every Svelte component is declared in a `.svelte` file, and in there you'll find the content (markup), the behavior (JavaScript), and the presentation (CSS) without having to define separate files.
 
-Which is a sane way to define a piece of the UI, because you don't need to search for the items that affect the same element across various files.
+Which is a sane way to define a piece of the UI because you don't need to search for the items that affect the same element across various files.
 
 Here's a sample component, which we'll store in a file called `Dog.svelte`:
 
@@ -26,11 +26,9 @@ h1 {
 
 Any JavaScript must be put in the `script` tag.
 
-The CSS you have in the `style` tag is scoped to the component and does not "leak" outside. If another component has an `h1` tag, this style will not affect that. Which is very handy when reusing components you already wrote for other applications, for example.
+The CSS you have in the `style` tag is scoped to the component and does not "leak" outside. If another component has an `h1` tag, this style will not affect that. This is very handy when reusing components you already wrote for other applications, for example, or when you include Open Source libraries published by other people.
 
-Or when you include Open Source libraries published by other people.
-
-For example a few weeks ago I included a date picker component built with Svelte in an application, and none of the stylings of the component leaked outside of it, and none of the CSS I wrote into the app modified the look of the date picker.
+For example, a few weeks ago I included a date picker component built with Svelte in an application and none of the stylings of the component leaked outside of it, and none of the CSS I wrote into the app modified the look of the date picker.
 
 ## Importing the component in other components
 
@@ -62,7 +60,7 @@ As you saw above, to export the component we didn't have to do anything, because
 
 What if you want to export something other than the component markup and its associated and built-in functionality?
 
-You must write all the functions you want to export from a special `script` tag, with the `context="module"` attribute.
+You must write all the functions you want to export from a special `script` tag with the `context="module"` attribute.
 
 Here's an example. Say you have a Button component in `Button.svelte`:
 
