@@ -4,7 +4,7 @@ And vice versa, depending on your point of view, slots are a handy way to config
 
 Here's how they work.
 
-In a component, you can define a slot using the `<slot />` (or `<slot></slot>` syntax.
+In a component you can define a slot using the `<slot />` (or `<slot></slot>`) syntax.
 
 Here's a `Button.svelte` component that simply prints a `<button>` HTML tag:
 
@@ -14,7 +14,7 @@ Here's a `Button.svelte` component that simply prints a `<button>` HTML tag:
 
 > For React developers, this is basically the same as `<button>{props.children}</button>`
 
-Any component importing it can define content that is going to be put into the slot, by adding it into the component opening and closing tags:
+Any component importing it can define content that is going to be put into the slot by adding it into the component's opening and closing tags:
 
 ```html
 <script>
@@ -57,4 +57,14 @@ import Button from './Button.svelte'
   <p slot="before">Add this before</p>
   <p slot="after">Add this after</p>
 </Button>
+```
+
+And this would render the following to the DOM: 
+
+```html
+<p slot="before">Add this before</p>
+<button>
+  Insert this into the slot
+</button>
+<p slot="after">Add this after</p>
 ```
