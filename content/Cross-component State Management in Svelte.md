@@ -32,7 +32,7 @@ setContext('someKey', someObject)
 </script>
 ```
 
-Into another component you can use getContext to retrieve the object assigned to a key:
+In another component you can use `getContext` to retrieve the object assigned to a key:
 
 ```html
 <script>
@@ -44,7 +44,7 @@ const someObject = getContext('someKey')
 
 You can only use `getContext` to retrieve a key either in the component that used `setContext` or in one of its descendants.
 
-If you want to let two components living in 2 different component trees communicate, there's another tool for us: **stores**.
+If you want to let two components living in 2 different component trees communicate there's another tool for us: **stores**.
 
 ## Using Svelte stores
 
@@ -62,7 +62,7 @@ and create a store variable using the `writable()` function, passing the default
 const username = writable('Guest')
 ```
 
-This can be put into a separate file, which you can import into multiple components, for example, called `store.js` (it's not a component, so it can be in a `.js` file instead of `.svelte`:
+This can be put into a separate file which you can import into multiple components, for example, called `store.js` (it's not a component, so it can be in a `.js` file instead of `.svelte`):
 
 ```js
 import { writable } from 'svelte/store'
@@ -107,9 +107,9 @@ export const username = writable('Guest')
 get(username) //'Guest'
 ```
 
-To create a reactive variable instead, that's updated whenever it changes, you can prepend the store variable using `$`, in this example `$username`. Using that will make the component re-render whenever the stored value changes.
+To create a reactive variable that's updated whenever the store value changes instead, you can prepend the store variable using `$` (in this example `$username`). Using that will make the component re-render whenever the stored value changes.
 
-> Svelte considers `$` to be a reserved value and will prevent you to use it for things that are not related to stores values (and which might lead to confusion), so if you are used to prepending DOM references using `$`, don't do it in Svelte.
+> Svelte considers `$` to be a reserved value and will prevent you to use it for things that are not related to stores values (which might lead to confusion), so if you are used to prepending DOM references using `$`, don't do it in Svelte.
 >
 Another option, best suited if you need to execute some logic when the variable changes, is to use the `subscribe()` method of `username`:
 
@@ -174,7 +174,7 @@ import { count } from './store.js'
 
 A derived store allows you to create a new store value that depends on the value of an existing store.
 
-You can do so using the `derived()` function exported by `svelte/store`, which takes as first parameter the existing store value, and as a second parameter a function, which receives that store value as its first parameter:
+You can do so using the `derived()` function exported by `svelte/store` which takes as its first parameter the existing store value, and as a second parameter a function which receives that store value as its first parameter:
 
 ```js
 import { writable, derived } from 'svelte/store'
