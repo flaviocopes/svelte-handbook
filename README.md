@@ -1,5 +1,7 @@
 # Welcome!
 
+The book is available at <https://flaviocopes.com/page/ebooks/>
+
 I wrote this book to help you quickly learn Svelte and get familiar with how it works.
 
 The ideal reader of the book has zero knowledge of Svelte, has maybe used Vue or React, but is looking for something _more_, or a new approach to things.
@@ -13,14 +15,6 @@ Flavio
 You can reach me via email at [flavio@flaviocopes.com](mailto:flavio@flaviocopes.com), on Twitter [@flaviocopes](https://twitter.com/flaviocopes).
 
 My website is [flaviocopes.com](https://flaviocopes.com).
-
-## How to contribute
-
-I'm looking for help in finding typos or grammar issues. I'll be re-reading the document in the weekend and Monday but any help if appreciated!
-
-Open an issue, or (better!) click the Edit button (the pencil at the top right of the document) on the markdown file you want to edit.
-
-If you prefer you can also [see the PDF](https://www.dropbox.com/s/ejea6scayntdroq/Svelte%20Handbook.pdf?dl=0) on Dropbox, and comment there, too!
 
 ## Summary
 
