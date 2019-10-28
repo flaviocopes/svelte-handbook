@@ -1,4 +1,4 @@
-Every component in Svelte fires several lifecycle events that we can hook on, to help us implement the functionality we have in mind.
+Every component in Svelte fires several lifecycle events that we can hook into that help us implement the functionality we have in mind.
 
 In particular, we have
 
@@ -9,7 +9,7 @@ In particular, we have
 
 We can schedule functions to happen when these events are fired by Svelte.
 
-We don't have access to any of those methods by default, but we need to import them from the `svelte` package:
+We don't have access to any of those methods by default, but we can import them from the `svelte` package:
 
 ```html
 <script>
