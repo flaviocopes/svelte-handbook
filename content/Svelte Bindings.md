@@ -24,7 +24,7 @@ Now if `name` changes the input field will update its value. And the opposite is
 
 ## Checkboxes and radio buttons
 
-Checkboxes and radio inputs (`input` elements with `type="checkbox"` or `type="radio"`) allow those 3 bindings:
+Checkboxes and radio inputs (`input` elements with `type="checkbox"` or `type="radio"`) allow these 3 bindings:
 
 - `bind:checked`
 - `bind:group`
@@ -40,7 +40,7 @@ let isChecked
 <input type=checkbox bind:checked={isChecked}>
 ```
 
- `bind:group` is handy with checkboxes and radio inputs, because those are very often used in groups. Using `bind:group` you can associate a JavaScript array to a list of checkboxes, and have it populated based on the choices made by the user.
+ `bind:group` is handy with checkboxes and radio inputs because those are very often used in groups. Using `bind:group` you can associate a JavaScript array to a list of checkboxes and have it populated based on the choices made by the user.
 
 Here's an example. The `goodDogs` array populates based on the checkboxes I tick:
 
@@ -93,7 +93,7 @@ let selected
 {selected}
 ```
 
-The cool thing is that if you generate options dynamically from an array of objects, the selected option is now an object, not a string:
+The cool thing is that if you generate options dynamically from an array of objects, the selected option is now an object not a string:
 
 ```html
 <script>
@@ -156,11 +156,11 @@ See example:  [https://svelte.dev/repl/b003248e87f04919a2f9fed63dbdab8c](https:/
 
 Depending on the HTML tag you are working on, you can apply different kinds of bindings.
 
-`bind:files` is a binding valid on `type="file"` input elements, to bind the list of selected files.
+`bind:files` is a binding valid on `type="file"` input elements to bind the list of selected files.
 
 The `details` HTML element allows the use of `bind:open` to bind its open/close value.
 
-The `audio` and `video` media HTML tags allow to bind several of their properties: `currentTime`, `duration`, `paused`, `buffered`, `seekable`, `played`, `volume`, `playbackRate`.
+The `audio` and `video` media HTML tags allow you to bind several of their properties: `currentTime`, `duration`, `paused`, `buffered`, `seekable`, `played`, `volume`, `playbackRate`.
 
 `textContent` and `innerHTML` can be bound on `contenteditable` fields.
 
@@ -168,7 +168,7 @@ All things very useful for those specific HTML elements.
 
 ## Read-only bindings
 
-`offsetWidth`, `offsetHeight`, `clientWidth`, `clientHeight` can be bound, read only, on any block level HTML element, excluding void tags (like `br`) and elements that are set to be inline (`display: inline`).
+`offsetWidth`, `offsetHeight`, `clientWidth`, `clientHeight` can be bound *read only* on any block level HTML element, excluding void tags (like `br`) and elements that are set to be inline (`display: inline`).
 
 ## Get a reference to the HTML element in JavaScript
 
